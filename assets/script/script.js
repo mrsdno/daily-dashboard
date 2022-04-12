@@ -1,34 +1,39 @@
 // Collection Of Quote
 const quotes = [{
-    quote: `Quote 1`,
-    author: `-Author`
+    quote: `Positive anything is better than
+    negative nothing.`,
+    author: `-Elbert Hubbard`
 }, {
-    quote: `Quote 2`,
-    author: `-Author`
+    quote: `Winning is fun, but those moments that you can touch someone’s life in a very positive way
+    are better.`,
+    author: `-Tim Howard`
 }, {
-    quote: `Quote 3`,
-    author: `-Author`
+    quote: `Optimism is a happiness magnet. If you stay positive good things and good people will be drawn to you.`,
+    author: `-Mary Lou Retton`
 }, {
-    quote: `Quote 4`,
-    author: `-Author`
+    quote: `Virtually nothing is impossible in this world if you just put your mind to it and maintain a
+    positive attitude.`,
+    author: `-Lou Holtz`
 }, {
-    quote: `Quote 5`,
-    author: `-Author`
+    quote: `It makes a big difference in your life when you
+    stay positive.`,
+    author: `-Ellen DeGeneres`
 }, {
-    quote: `Quote 6`,
-    author: `-Author`
+    quote: `If opportunity doesn’t knock, build a door.`,
+    author: `-Milton Berle`
 }, {
-    quote: `Quote 7`,
-    author: `-Author`
+    quote: `You are never too old to set another goal or dream a new dream.`,
+    author: `-Les Brown`
 }, {
-    quote: `Quote 8`,
-    author: `-Author`
+    quote: `Happiness is an attitude. We either make ourselves miserable, or happy and strong. The amount of work is
+    the same.`,
+    author: `-Francesca Reigler`
 }, {
-    quote: `Quote 9`,
-    author: `-Author`
+    quote: `The sun himself is weak when he first rises, and gathers strength and courage as the day gets on.`,
+    author: `-Charles Dickens`
 }, {
-    quote: `Quote 10`,
-    author: `-Author`
+    quote: `It’s not whether you get knocked down, it’s whether you get up.`,
+    author: `-Vince Lombardi`
 }, ]
 // New Quote Button
 const quoteBtn = document.getElementById('quote-btn');
