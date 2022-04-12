@@ -64,6 +64,17 @@ p {
     text-transform: capitalize;
 }
 
+.quote-btn{
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    color: #383838;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-top: 110px;
+}
+
 button {
     margin-left: 150px;
 }
