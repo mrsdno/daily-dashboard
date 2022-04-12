@@ -1,34 +1,34 @@
 // Collection Of Quote
 const quotes = [{
-    quote: `Quote 1`,
-    author: `-Author`
+    quote: `I'm not a great programmer; I'm just a good programmer with great habits.`,
+    author: `-Kent Beck`
 }, {
-    quote: `Quote 2`,
-    author: `-Author`
+    quote: `Talk is cheap. Show me the code.`,
+    author: `-Linus Torvalds`
 }, {
-    quote: `Quote 3`,
-    author: `-Author`
+    quote: `Programs must be written for people to read, and only incidentally for machines to execute.`,
+    author: `-Harold Abelson`
 }, {
-    quote: `Quote 4`,
-    author: `-Author`
+    quote: `Truth can only be found in one place: the code.`,
+    author: `-Robert C`
 }, {
-    quote: `Quote 5`,
-    author: `-Author`
+    quote: `Give a man a program, frustrate him for a day. Teach a man to program, frustrate him for a lifetime.`,
+    author: `-Muhammad Waseem`
 }, {
-    quote: `Quote 6`,
-    author: `-Author`
+    quote: `How you look at it is pretty much how you'll see it`,
+    author: `-Steve Jobs`
 }, {
-    quote: `Quote 7`,
-    author: `-Author`
+    quote: `The most disastrous thing that you can ever learn is your first programming language.`,
+    author: `-Alan Kay`
 }, {
-    quote: `Quote 8`,
-    author: `-Author`
+    quote: `The most important property of a program is whether it accomplishes the intention of its user.`,
+    author: `-C.A.R. Hoare`
 }, {
-    quote: `Quote 9`,
-    author: `-Author`
+    quote: `i am committed to push my branch to the master.`,
+    author: `-Halgurd Hussein`
 }, {
-    quote: `Quote 10`,
-    author: `-Author`
+    quote: `Coding is not just code, that is a live thing to serve everyone!`,
+    author: `-Ming Song`
 }, ]
 // New Quote Button
 const quoteBtn = document.getElementById('quote-btn');
