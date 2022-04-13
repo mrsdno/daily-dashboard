@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<header class="jumbotron">
+    <h1 class="display-3">Your Daily Dashboard</h1>
+    <h2 class="date">Current Date</h2>
+    <p id="currentDay" class="lead">
+    </p>
+  </header>
+  <script>
+    let dateToday = document.getElementById("currentDay");
+
+    let today = new Date();
+  let day = `${today.getDate() < 10 ? "0" : ""}${today.getDate()}`;
+
+  let month = `${(today.getMonth() + 1) < 10 ? "0" : ""}${today.getMonth() + 1}`;
+  console.log(month);
+  let year = today.getFullYear();
+
+    dateToday.textContent = `${day}/${month}/${year}`
+  </script>
+<body>
+    <section class="section">
+    <div class="joke_section">
+        <h2>
+        Daily Joke
+        </h2>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, animi quam impedit sapiente earum sed eaque deleniti laborum eveniet quas pariatur natus similique sunt? Ab quia velit consequuntur cumque fugiat.</h3>
+        <button>Next Joke</button>
+    </div>
+    <div class="quote_section">
+        <h2>
+            Daily Quote
+        </h2>
+        <h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis atque dicta quaerat. Harum necessitatibus dolorem eligendi delectus eaque corrupti ex deserunt iste adipisci, unde eum, modi ab sint nemo sequi!
+        </h3>
+        <button>Next Quote</button>
+    </div>
+  </section>
+</body>
+</html>
