@@ -38,7 +38,7 @@
 
 ## Screenshot
 
-* ![screenshot.png]()
+* ![screenshot.png](https://github.com/mrsdno/daily-dashboard/blob/main/assets/images/Screen%20Shot%202022-04-12%20at%207.04.03%20PM.png)
 
 ## Contribution
 
