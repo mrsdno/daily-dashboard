@@ -1,3 +1,23 @@
+var humorApiKey = "9669728bcac44db48eb2b346ee61e5ef";
+
+// fetch jokes from humorapi
+var getJokes = function() {
+    // humor API url
+    var humorApiURL = "https://api.humorapi.com/jokes/search?number=3&api-key=" + humorApiKey;
+
+    fetch(humorApiURL).
+    then(function(response) {
+        if (response.ok) {
+            response.json().then(function(response){
+                console.log(response);
+            })
+        }
+    })
+}
+
+// display jokes on page
+
+
 // Collection Of Quote
 const quotes = [{
     quote: `Positive anything is better than
