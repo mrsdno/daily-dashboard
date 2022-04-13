@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -36,4 +37,149 @@ text-align: center;
   top: 100px; left: 0; bottom: 0; right: 0;
   text-align: center;
   text-transform: uppercase;
+=======
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+section {
+    border: black;
+    border-radius: 5px;
+    border-style: outset;
+    margin-bottom: 10px;
+}
+
+#container {
+    width: 1800px;
+    margin: auto;
+}
+#first {
+    width: 600px;
+    float: left;
+    height: 300px;
+    border: black;
+    border-radius: 5px;
+    border-style: outset;
+    margin-left: 50px;
+    padding: 30px;
+}
+#second {
+    width: 600px;
+    float: left;
+    height: 300px;
+    border: black;
+    border-radius: 5px;
+    border-style: outset;
+    margin-left: 20px;
+    padding: 30px;
+}
+
+#clear {
+    clear: both;
+}
+
+.section1 {
+    border: black;
+    border-radius: 5px;
+    border-style: outset;
+    margin-top: 10px;
+    height: 200px;
+}
+
+p {
+    text-align: center;
+}
+
+.btn{
+    width: 48%;
+    padding: 20px;
+    border-radius: 5px;
+    color: #383838;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.quote-btn{
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    color: #383838;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-top: 110px;
+}
+
+button {
+    margin-left: 150px;
+}
+
+@media (max-width: 768px) {
+
+    #first {
+        width: 300px;
+        float: left;
+        height: 600px;
+        border: black;
+        border-radius: 5px;
+        border-style: outset;
+        margin-left: 50px;
+        padding: 15px;
+    }
+    #second {
+        width: 300px;
+        float: left;
+        height: 600px;
+        border: black;
+        border-radius: 5px;
+        border-style: outset;
+        margin-left: 20px;
+        padding: 15px;
+    }
+
+    button {
+        margin-left: 100px;
+    }
+
+    .btn{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #first {
+        width: 150px;
+        float: left;
+        height: 900px;
+        border: black;
+        border-radius: 5px;
+        border-style: outset;
+        margin-left: 50px;
+        padding: 7px;
+    }
+    #second {
+        width: 150px;
+        float: left;
+        height: 900px;
+        border: black;
+        border-radius: 5px;
+        border-style: outset;
+        margin-left: 20px;
+        padding: 7px;
+    }
+
+    button {
+        margin-left: 50px;
+    }
+
+    .btn{
+        font-size: 10px;
+    }
+>>>>>>> 0443ad1184f8fe99380205f05ae6798f0c04ca48
 }
