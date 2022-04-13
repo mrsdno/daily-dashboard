@@ -46,3 +46,4 @@ quoteBtn.addEventListener('click', () => {
     quote.innerHTML = quotes[random].quote;
     author.innerHTML = quotes[random].author;
 })
+
