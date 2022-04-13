@@ -1,3 +1,33 @@
+var humorApiKey = "9669728bcac44db48eb2b346ee61e5ef";
+
+// fetch jokes from humorapi
+var getJokes = function() {
+    // humor API url
+    var humorApiURL = "https://v2.jokeapi.dev/joke/Any?safe-mode&type=single"
+
+    fetch(humorApiURL).
+    then(function(response) {
+        if (response.ok) {
+            response.json().then(function(response){
+                displayJokes(response);
+            })
+        }
+    })
+}
+
+// display jokes on page
+
+var displayJokes = function(jokes) {
+    // create element to hold joke, select element to append joke
+    var jokeTextEl = document.createElement("p");
+    var jokeHolderEl = document.querySelector("#joke-holder");
+    jokeTextEl.textContent = jokes.joke;
+
+    jokeHolderEl.appendChild(jokeTextEl);
+    
+
+}
+
 // Collection Of Quote
 const quotes = [{
     quote: `Positive anything is better than
@@ -46,3 +76,5 @@ quoteBtn.addEventListener('click', () => {
     quote.innerHTML = quotes[random].quote;
     author.innerHTML = quotes[random].author;
 })
+
+getJokes();
