@@ -1,6 +1,28 @@
+
+const api = "https://api.quotable.io/random";
+
+const quote = document.getElementById("quote");
+const author = document.getElementById("author");
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", getQuote);
+
+function getQuote() {
+  fetch(api)
+    .then((res) => res.json())
+    .then((data) => {
+      quote.innerHTML = `"${data.content}"`;
+      author.innerHTML = `- ${data.author}`;
+    });
+}
+
+// Jokes API
+var humorApiKey = "9669728bcac44db48eb2b346ee61e5ef";
+
 var humorApiKey = "9669728bcac44db48eb2b346ee61e5ef";
 var jokeBtn = document.querySelector("#joke-btn");
 var jokeTextEl = document.createElement("p");
+
 
 // fetch jokes from humorapi
 var getJokes = function() {
@@ -24,10 +46,21 @@ var nextJoke = function() {
 
 jokeBtn.addEventListener("click", nextJoke);
 
+
 // display jokes on page
 
 var displayJokes = function(jokes) {
     // create element to hold joke, select element to append joke
+
+    var jokeTextEl = document.createElement("p");
+    var jokeHolderEl = document.querySelector("#joke-holder");
+    jokeTextEl.textContent = jokes.joke;
+
+    jokeHolderEl.appendChild(jokeTextEl);
+    
+
+}
+
     
     var jokeHolderEl = document.querySelector("#joke-holder");
     jokeTextEl.textContent = jokes.joke;
@@ -99,3 +132,4 @@ console.log(month);
 let year = today.getFullYear();
 
 dateToday.textContent = `${day}/${month}/${year}`
+
