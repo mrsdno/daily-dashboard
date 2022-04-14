@@ -20,6 +20,7 @@ section {
     border-radius: 5px;
     border-style: outset;
     margin-bottom: 10px;
+    background-color: var(--pink);
 }
 
 #container {
@@ -35,6 +36,7 @@ section {
     border-style: outset;
     margin-left: 50px;
     padding: 30px;
+    background-color: var(--blue);
 }
 #second {
     width: 600px;
@@ -45,6 +47,7 @@ section {
     border-style: outset;
     margin-left: 20px;
     padding: 30px;
+    background-color: var(--blue);
 }
 
 #clear {
@@ -57,6 +60,7 @@ section {
     border-style: outset;
     margin-top: 10px;
     height: 200px;
+    background-color: var(--yellow);
 }
 
 p {
@@ -72,6 +76,16 @@ p {
     cursor: pointer;
     text-transform: capitalize;
 }
+.joke-btn{
+  width: 48%;
+  padding: 20px;
+  border-radius: 5px;
+  color: #383838;
+  font-size: 20px;
+  cursor: pointer;
+  text-transform: capitalize;
+  background-color: var(--white);
+}
 
 .quote-btn{
     width: 100%;
@@ -82,6 +96,14 @@ p {
     cursor: pointer;
     text-transform: capitalize;
     margin-top: 110px;
+    background-color: var(--white);
+}
+.joke-btn:hover{
+  font-size: 150%;
+}
+
+.quote-btn:hover{
+  font-size: 150%;
 }
 
 button {
