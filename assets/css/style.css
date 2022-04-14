@@ -21,6 +21,7 @@ section {
     border-radius: 5px;
     border-style: outset;
     margin-bottom: 10px;
+    background-color: var(--pink);
 }
 
 #container {
@@ -36,6 +37,7 @@ section {
     border-style: outset;
     margin-left: 50px;
     padding: 30px;
+    background-color: var(--blue);
 }
 #second {
     width: 600px;
@@ -46,6 +48,7 @@ section {
     border-style: outset;
     margin-left: 20px;
     padding: 30px;
+    background-color: var(--blue);
 }
 
 #clear {
@@ -58,6 +61,7 @@ section {
     border-style: outset;
     margin-top: 10px;
     height: 200px;
+    background-color: var(--yellow);
 }
 
 p {
