@@ -6,38 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Dashboard</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+
 </head>
 <body>
-
   <section>
     <h1>Your Daily Dashboard</h1>
     <h2>Current Date</h2>
     <p id="currentDay"></p>
-</section>
+  </section>
 
     <div id="container">
-      <div id="first">
-        <h2>Daily Joke</h2>
-        <div id="joke-holder"></div>
-        <button class="btn">Next Joke</button>
-    </div>
+        <div id="first">
+            <h2>Daily Joke</h2>
+            <div id="joke-holder"></div>
+            <button class="pure-button" id="joke-btn">Next Joke</button>
+        </div>
+
         <div id="second">
             <h2>Daily Quote</h2>
             <div class="quote-box">
-              <p id="quote">"Feeling and longing are the motive forces behind all human endeavor and human creations."</p>
-              <small id="author">- Albert Einstein</small>
-            </div>
-            <button id="btn" class="btn">New Quote</button>
-          </div>
+                <div class="icon-quote">
+                  <span class="icon">
+                    <i class="fas fa-quote-left"></i>
+                  </span>
+                  <p id="quote"><span class="quote">Positive anything is better than
+                    negative nothing.</span></p>
+                </div>
+                <small id="author"><div class="author">― Elbert Hubbard</div></small>
+                <div class="quote-buttons">
+                  <div class="btn">
+                    <button id="btn" class="pure-button">Next Quote</button>
+                  </div>
+                </div>
+              </div>
+            
         </div>
         <div>
         <div id="clear"></div>
     </div>
+  </div>
 
    <div class="section1">
         <h2>Daily Planner</h2>
     </div>
     
+    <script src="assets/script/joke.js"></script>
+    <script src="assets/script/planner.js"></script>
+    <script src="assets/script/quote.js"></script>
     <script src="assets/script/script.js"></script>
 </body>
 </html>
