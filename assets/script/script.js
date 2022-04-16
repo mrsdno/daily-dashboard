@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 //Date function
 let dateToday = document.getElementById("currentDay");
 
