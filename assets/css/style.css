@@ -1,13 +1,12 @@
 :root {
-    --blue: #26547C;
-    --pink: #EF476F;
-    --yellow: #FFD166;
-    --green: #06D6A0;
-    --black: #000;
-    --white: #FCFCFC;
-
-
+    --blue: rgb(38, 84, 124);
+    --pink: rgb(239, 71, 111);
+    --yellow: rgb(255, 209, 102);
+    --green: rgb(5, 214, 158);
+    --black: rgb(0, 0, 0);
+    --white: rgb(252, 252, 252);
 }
+
 h1 {
     text-align: center;
 }
@@ -16,7 +15,7 @@ h2 {
     text-align: center;
 }
 
-section {
+header {
     border: black;
     border-radius: 5px;
     border-style: outset;
@@ -24,29 +23,27 @@ section {
     background-color: var(--pink);
 }
 
-#container {
-    width: 1800px;
-    margin: auto;
+.justify-content-space-around {
+    justify-content: space-around;
 }
+
 #first {
-    width: 600px;
-    float: left;
-    height: 300px;
     border: black;
     border-radius: 5px;
     border-style: outset;
-    margin-left: 50px;
     padding: 30px;
     background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0px;
 }
+
 #second {
-    width: 600px;
-    float: left;
-    height: 300px;
     border: black;
     border-radius: 5px;
     border-style: outset;
-    margin-left: 20px;
     padding: 30px;
     background-color: var(--blue);
 }
@@ -55,7 +52,7 @@ section {
     clear: both;
 }
 
-.section1 {
+.daily-planner {
     border: black;
     border-radius: 5px;
     border-style: outset;
@@ -88,6 +85,8 @@ p {
   background-color: var(--white);
 }
 
+
+
 .quote-btn{
     width: 100%;
     padding: 20px;
@@ -107,10 +106,9 @@ p {
   font-size: 150%;
 }
 
-button {
-    margin-left: 150px;
-}
 
+
+/* 
 @media (max-width: 768px) {
 
     #first {
@@ -173,4 +171,4 @@ button {
     .btn{
         font-size: 10px;
     }
-}
+} */

@@ -7,6 +7,7 @@
     <title>Daily Dashboard</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+<<<<<<< HEAD
 </head>
 <body>
   <section>
@@ -53,10 +54,59 @@
    <div class="section1">
         <h2>Daily Planner</h2>
     </div>
+=======
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
+</head>
+<body>
+  <header class="pure-g">
+    <h1 class="pure-u-1">Your Daily Dashboard</h1>
+    <h2 class="pure-u-1">Current Date</h2>
+    <p class="pure-u-1" id="currentDay"></p>
+  </header>
+  <!-- start pure grid -->
+  <section class="pure-g justify-content-space-around">
+      <!-- joke article -->
+      <article class="pure-u-1 pure-u-md-2-5" id="first">
+          <h2>Daily Joke</h2>
+          <div id="joke-holder">
+            
+          </div>
+          <button class="pure-button btn" id="joke-btn">Next Joke</button>
+      </article>
+      <!-- end joke article -->
+
+      <!-- quote article -->
+      <article class="pure-u-1 pure-u-md-2-5" id="second">
+          <h2>Daily Quote</h2>
+          <div class="quote-body">
+              <div class="icon-quote">
+                <span class="icon">
+                  <i class="fas fa-quote-left"></i>
+                </span>
+                <span class="quote">Positive anything is better than
+                  negative nothing.</span>
+              </div>
+              <div class="author">― Elbert Hubbard</div>
+              <div class="quote-buttons">
+                <div class="quote-btn">
+                  <button id="quote-btn" class="pure-button">Next Quote</button>
+                </div>
+              </div>
+            </div>
+      </article>
+      <!-- end quote article -->
+    </section>
+    
+    <!-- start daily planner-->
+   <section class="daily-planner pure-g">
+        <h2 class="pure-u-1">Daily Planner</h2>
+   </section>
+>>>>>>> fd77d3ec8b064b1f58d50a2a4f60a0c6ae5ab6a0
     
     <script src="assets/script/joke.js"></script>
     <script src="assets/script/planner.js"></script>
-    <script src="assets/script/quote.js"></script>
+    <!-- <script src="assets/script/quote.js"></script> -->
     <script src="assets/script/script.js"></script>
 </body>
 </html>
