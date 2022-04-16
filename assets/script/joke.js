@@ -51,15 +51,4 @@ var displayJokes = function(jokes) {
     jokeTextEl.setAttribute("id", "display-joke");
 }
 
-<<<<<<< HEAD
-
-
-
-
-// get another joke
-
-
-getJokes();
-=======
 getJokes()
->>>>>>> fd77d3ec8b064b1f58d50a2a4f60a0c6ae5ab6a0
