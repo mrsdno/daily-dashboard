@@ -1,9 +1,13 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1;
-  }
-.jumbotron {
+:root {
+    --blue: rgb(38, 84, 124);
+    --pink: rgb(239, 71, 111);
+    --yellow: rgb(255, 209, 102);
+    --green: rgb(5, 214, 158);
+    --black: rgb(0, 0, 0);
+    --white: rgb(252, 252, 252);
+}
+
+h1 {
     text-align: center;
     background-color: transparent;
     color: black;
@@ -42,48 +46,50 @@ text-align: center;
     text-align:center;
 }
 
-section {
+header {
     border: black;
     border-radius: 5px;
     border-style: outset;
     margin-bottom: 10px;
+    background-color: var(--pink);
 }
 
-#container {
-    width: 1800px;
-    margin: auto;
+.justify-content-space-around {
+    justify-content: space-around;
 }
+
 #first {
-    width: 600px;
-    float: left;
-    height: 300px;
     border: black;
     border-radius: 5px;
     border-style: outset;
-    margin-left: 50px;
     padding: 30px;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0px;
 }
+
 #second {
-    width: 600px;
-    float: left;
-    height: 300px;
     border: black;
     border-radius: 5px;
     border-style: outset;
-    margin-left: 20px;
     padding: 30px;
+    background-color: var(--blue);
 }
 
 #clear {
     clear: both;
 }
 
-.section1 {
+.daily-planner {
     border: black;
     border-radius: 5px;
     border-style: outset;
     margin-top: 10px;
     height: 200px;
+    background-color: var(--yellow);
 }
 
 p {
@@ -99,6 +105,18 @@ p {
     cursor: pointer;
     text-transform: capitalize;
 }
+.joke-btn{
+  width: 48%;
+  padding: 20px;
+  border-radius: 5px;
+  color: #383838;
+  font-size: 20px;
+  cursor: pointer;
+  text-transform: capitalize;
+  background-color: var(--white);
+}
+
+
 
 .quote-btn{
     width: 100%;
@@ -109,12 +127,19 @@ p {
     cursor: pointer;
     text-transform: capitalize;
     margin-top: 110px;
+    background-color: var(--white);
+}
+.joke-btn:hover{
+  font-size: 150%;
 }
 
-button {
-    margin-left: 150px;
+.quote-btn:hover{
+  font-size: 150%;
 }
 
+
+
+/* 
 @media (max-width: 768px) {
 
     #first {
@@ -177,4 +202,4 @@ button {
     .btn{
         font-size: 10px;
     }
-}
+} */

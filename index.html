@@ -5,88 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Dashboard</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
-</head>
-<header class="jumbotron">
-    <h1 class="display-3">Your Daily Dashboard</h1>
-    <h2 class="date">Current Date</h2>
-    <p id="currentDay" class="lead">
-    </p>
-  </header>
-  <script>
-   let dateToday = document.getElementById("currentDay");
-
-let today = new Date();
-let day = `${today.getDate() < 10 ? "0" : ""}${today.getDate()}`;
-
-let month = `${(today.getMonth() + 1) < 10 ? "0" : ""}${today.getMonth() + 1}`;
-console.log(month);
-let year = today.getFullYear();
-
-dateToday.textContent = `${day}/${month}/${year}`
-  </script>
-<body>
-    <section class="splash-container">
-    <div class="splash">
-        <h2 class="splash-head">
-        Daily Joke
-        </h2>
-        <h3 class="splash-subhead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, animi quam impedit sapiente earum sed eaque deleniti laborum eveniet quas pariatur natus similique sunt? Ab quia velit consequuntur cumque fugiat.</h3>
-        <button>Next Joke</button>
-    </div>
-    <div class="quote_section">
-        <h2>
-            Daily Quote
-        </h2>
-        <h3>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis atque dicta quaerat. Harum necessitatibus dolorem eligendi delectus eaque corrupti ex deserunt iste adipisci, unde eum, modi ab sint nemo sequi!
-        </h3>
-        <button>Next Quote</button>
-    </div>
-  </section>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+
 </head>
 <body>
+  <header class="pure-g">
+    <h1 class="pure-u-1">Your Daily Dashboard</h1>
+    <h2 class="pure-u-1">Current Date</h2>
+    <p class="pure-u-1" id="currentDay"></p>
+  </header>
+  <!-- start pure grid -->
+  <section class="pure-g justify-content-space-around">
+      <!-- joke article -->
+      <article class="pure-u-1 pure-u-md-2-5" id="first">
+          <h2>Daily Joke</h2>
+          <div id="joke-holder">
+            
+          </div>
+          <button class="pure-button btn" id="joke-btn">Next Joke</button>
+      </article>
+      <!-- end joke article -->
 
-   <section>
-       <h1>Your Daily Dashboard</h1>
-       <h2>Current Date</h2>
-   </section>
-
-    <div id="container">
-        <div id="first">
-            <h2>Daily Joke</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam optio, sed eum aliquam eius aspernatur nostrum qui cupiditate hic vero id nihil aliquid eaque voluptatum quisquam dignissimos, at laudantium perspiciatis libero numquam recusandae fugit in dolorem fugiat. Explicabo, expedita accusantium placeat harum obcaecati numquam odio tenetur amet neque minus delectus nisi vitae sapiente porro sed modi sequi quidem ut vero! Quaerat corporis, ullam non tenetur soluta pariatur blanditiis nam sunt suscipit repudiandae ipsum cumque et alias inventore fugiat magni tempora repellendus dolorem! Blanditiis unde velit deleniti voluptatem vero minima praesentium est doloribus? Voluptatem fugit aspernatur officia non soluta veniam nemo.</p>
-            <button class="btn">Next Joke</button>
-        </div>
-        <div id="second">
-            <h2>Daily Quote</h2>
-            <div class="quote-body">
-                <div class="icon-quote">
-                  <span class="icon">
-                    <i class="fas fa-quote-left"></i>
-                  </span>
-                  <span class="quote">Positive anything is better than
-                    negative nothing.</span>
-                </div>
-                <div class="author">― Elbert Hubbard</div>
-          
-                <div class="quote-buttons">
-          
-                  <div class="btn">
-                    <button id="quote-btn" class="quote-btn">Next Quote</button>
-                  </div>
+      <!-- quote article -->
+      <article class="pure-u-1 pure-u-md-2-5" id="second">
+          <h2>Daily Quote</h2>
+          <div class="quote-body">
+              <div class="icon-quote">
+                <span class="icon">
+                  <i class="fas fa-quote-left"></i>
+                </span>
+                <span class="quote">Positive anything is better than
+                  negative nothing.</span>
+              </div>
+              <div class="author">― Elbert Hubbard</div>
+              <div class="quote-buttons">
+                <div class="quote-btn">
+                  <button id="quote-btn" class="pure-button">Next Quote</button>
                 </div>
               </div>
-        </div>
-        <div id="clear"></div>
-    </div>
-
-   <div class="section1">
-        <h2>Daily Planner</h2>
-    </div>
+            </div>
+      </article>
+      <!-- end quote article -->
+    </section>
     
+    <!-- start daily planner-->
+   <section class="daily-planner pure-g">
+        <h2 class="pure-u-1">Daily Planner</h2>
+   </section>
+    
+    <script src="assets/script/joke.js"></script>
+    <script src="assets/script/planner.js"></script>
+    <!-- <script src="assets/script/quote.js"></script> -->
     <script src="assets/script/script.js"></script>
 </body>
 </html>
