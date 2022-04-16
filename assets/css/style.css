@@ -7,7 +7,7 @@
     --white: rgb(252, 252, 252);
 }
 
-h1 {
+h1,h2 {
     text-align: center;
     background-color: transparent;
     color: black;
@@ -118,24 +118,23 @@ p {
 
 
 
-.quote-btn{
-    width: 100%;
+.joke-btn{
+    width: 48%;
     padding: 20px;
     border-radius: 5px;
     color: #383838;
     font-size: 20px;
     cursor: pointer;
     text-transform: capitalize;
-    margin-top: 110px;
     background-color: var(--white);
-}
+    align-items: center;
+  }
+  
 .joke-btn:hover{
   font-size: 150%;
 }
 
-.quote-btn:hover{
-  font-size: 150%;
-}
+
 
 
 
