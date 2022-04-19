@@ -109,6 +109,7 @@ ul li {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    padding-top: 12px;
 }
 
 ul li.checked {
@@ -119,7 +120,16 @@ ul li.checked {
 
 
 .close {
-    right: 100px;
+    position: absolute;
+    right: 10px;
+    top: 0;
     color: var(--pink);
     padding: 12px 16px 12px 60px;
   }
+
+.addBtn {
+    letter-spacing: 0.1rem;
+    padding: 5px 20px;
+    background-color: var(--pink);
+    margin: 5px;
+}
