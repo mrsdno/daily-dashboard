@@ -51,8 +51,19 @@
     </section>
     
     <!-- start daily planner-->
-   <section class="daily-planner pure-g">
+   <section class="daily-planner pure-g justify-content-space-around">
         <h2 class="pure-u-1">Daily Planner</h2>
+        <div id="to-do-section">
+          <!-- input box and add button -->
+        <div class="form-group">
+          <input type="text" name="input-box" id="input-box" placeholder="what to do today?">
+          <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+
+        <!-- unordered list for tasks -->
+        <ul id="task-list" class="pure-u-1" >
+
+        </ul>
    </section>
     
     <script src="assets/script/joke.js"></script>
