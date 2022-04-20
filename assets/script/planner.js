@@ -1,3 +1,7 @@
+var toDoTasks = {
+    tasks: []
+}
+
 // create delete button and add to each item
 var close = document.getElementsByClassName("close");
 var i;
@@ -9,7 +13,7 @@ for (i=0; i < close.length; i++) {
     }
 }
 
-// add check when you click an item
+// cross out item when you click on i
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
     if(ev.target.tagName === "LI") {
@@ -36,6 +40,12 @@ function newElement() {
     span.className = "close";
     span.appendChild(txt);
     li.appendChild(span);
+    console.log(inputValue);
+
+    // add input value to the to do array
+    toDoTasks.tasks.push(inputValue);
+
+    localStorage.setItem("to-do", toDoTasks.tasks);
 
     for (i=0; i < close.length; i++) {
         close[i].onclick = function() {

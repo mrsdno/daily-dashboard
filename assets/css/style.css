@@ -113,7 +113,6 @@ ul li {
 }
 
 ul li.checked {
-    background: var(--green);
     color: #fff;
     text-decoration: line-through;
 }
