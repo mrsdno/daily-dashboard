@@ -3,12 +3,16 @@
     --pink: rgb(239, 71, 111);
     --yellow: rgb(255, 209, 102);
     --green: rgb(5, 214, 158);
-    --black: rgb(0, 0, 0);
+    --black: rgb(62, 58, 58);
     --white: rgb(252, 252, 252);
 }
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
 }
 
 h1 {
@@ -22,7 +26,6 @@ h2 {
 header {
     border: black;
     border-radius: 5px;
-    border-style: outset;
     margin-bottom: 10px;
     background-color: var(--pink);
 }
@@ -31,25 +34,17 @@ header {
     justify-content: space-around;
 }
 
-#first {
-    border: black;
+.joke-quote {
     border-radius: 5px;
-    border-style: outset;
     padding: 30px;
     background-color: var(--blue);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-content: center;
     margin: 10px 0px;
-}
-
-#second {
-    border: black;
-    border-radius: 5px;
-    border-style: outset;
-    padding: 30px;
-    background-color: var(--blue);
+    text-align: center;
+    height: 375px;
 }
 
 #clear {
@@ -57,11 +52,10 @@ header {
 }
 
 .daily-planner {
-    border: black;
+    width: 100%;
     border-radius: 5px;
-    border-style: outset;
     margin-top: 10px;
-    height: 200px;
+    min-height: 20rem;
     background-color: var(--yellow);
 }
 
@@ -70,26 +64,13 @@ p {
 }
 
 .btn{
-    width: 48%;
-    padding: 20px;
+    position: relative;
+    top: 75px;
+    width: 50%;
+    padding: 10px;
     border-radius: 5px;
-    color: #383838;
-    font-size: 20px;
+    font-size: 14px;
     cursor: pointer;
-    text-transform: capitalize;
-}
-
-
-
-.quote-btn{
-    width: 100%;
-    padding: 20px;
-    border-radius: 5px;
-    color: #383838;
-    font-size: 20px;
-    cursor: pointer;
-    text-transform: capitalize;
-    margin-top: 110px;
 }
 
 /* begin to do list section */
