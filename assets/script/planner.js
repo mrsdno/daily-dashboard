@@ -6,14 +6,19 @@ var addBtn = document.querySelector(".addBtn")
 var taskListEl = document.querySelector("#task-list")
 
 
-// create delete button and add to each item
+// create delete button and add to each item (for new item)
 var close = document.getElementsByClassName("close");
 var i;
 
 for (i=0; i < close.length; i++) {
     close[i].onclick = function() {
+        // set display to none
         var div = this.parentElement;
         div.style.display = "none";
+        
+
+        
+
     }
 }
 
@@ -66,6 +71,17 @@ function newElement() {
         close[i].onclick = function() {
             var div= this.parentElement;
             div.style.display = "none";
+
+            // remove item from local storage
+            var deleteItem = div.innerText.slice('0', '-1')
+            var taskArray = localStorage.getItem('to-do').split(',');
+            var taskIndex = taskArray.indexOf(deleteItem);
+            taskArray.splice(taskIndex, 1);
+            console.log(taskArray);
+            var taskString = taskArray.join(",");
+            
+            localStorage.setItem('to-do', taskString)
+                            
         }
     }
 }
@@ -104,7 +120,17 @@ function loadTasks() {
             for (t=0; t < close.length; t++) {
                 close[t].onclick = function() {
                 var div= this.parentElement;
-                div.style.display = "none";              
+                div.style.display = "none"; 
+                
+                // remove item from local storage
+                var deleteItem = div.innerText.slice('0', '-1')
+                var taskArray = localStorage.getItem('to-do').split(',');
+                var taskIndex = taskArray.indexOf(deleteItem);
+                taskArray.splice(taskIndex, 1);
+                console.log(taskArray);
+                var taskString = taskArray.join(",");
+                
+                localStorage.setItem('to-do', taskString)
                 }
             }
 
